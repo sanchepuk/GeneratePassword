@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textNumSymbolsHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Количество символов:" />
+
+    <LinearLayout
+        android:id="@+id/layoutNumSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonNumSymbolsLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="sub" />
+
+        <TextView
+            android:id="@+id/textNumSymbols"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="1"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonNumSymbolsRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="add" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkBoxSmallLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="a-z" />
+
+    <CheckBox
+        android:id="@+id/checkBoxBigLetter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A-Z" />
+
+    <CheckBox
+        android:id="@+id/checkBoxNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0-9" />
+
+    <CheckBox
+        android:id="@+id/checkBoxSymbols"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="!-*" />
+
+    <TextView
+        android:id="@+id/textPasswordHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Пароль:" />
+
+    <EditText
+        android:id="@+id/textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textServiceHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Сервис:" />
+
+    <EditText
+        android:id="@+id/textService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonGenerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сгенерировать" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Сохранить" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMyPasswords"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мои пароли" />
+
+</LinearLayout>
